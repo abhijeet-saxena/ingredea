@@ -3,3 +3,7 @@ body {
     font-size: 2rem;
     background-color: $color-blue;
 }
+::placeholder {
+    color: black;
+}
+

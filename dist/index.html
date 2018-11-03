@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
 
-    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -62,13 +62,13 @@
     </section>
     <footer class="footer">
 
-        <div class="form-box" class="form-box">
+        <div class="footer__form-box">
             <!--Footer Form-->
-            <h3 class="form-box__title">
+            <h3 class="footer__form-title">
                 <!--FORM Title-->
                 Send us your feedback!
             </h3>
-            <p class="form-box__text">
+            <p class="footer__form-text">
                 <!--FORM text-->
                 Do you have some suggestions or found some bugs ?
                 Let us know in the field below.
@@ -79,30 +79,46 @@
 
                 <div class="form__group">
                     <!--Name Input-->
-                    <label for="namess=" form__name"" class="form__name">
-                        Name:
+                    <input type="text" name="name" class="form__input" placeholder="Your Name">
+                    <label for="name" class="form__label">
+                        Your Name
                     </label>
-                    <input type="t class=" form__name-input"ext" name="name" class="form__name-input">
                 </div>
 
                 <div class="form__group">
                     <!--Email input-->
-                    <label for="email" class="form__mail">
-                        Email
+                    <input type="email" name="_replyto" class="form__input" placeholder="Your Email">
+                    <label for="email" class="form__label">
+                        Your Email
                     </label>
-                    <input type="email" name="_replyto" class="form__mail-input">
                 </div>
 
                 <div class="form__group">
-                    <!--Radio Group-->
-                    <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio--bug">
-                    <label for="contactChoice1">Bug</label>
+                    <!--Radio Groups-->
 
-                    <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio--suggest">
-                    <label for="contactChoice2">Suggestion</label>
-
-                    <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio--other">
-                    <label for="contactChoice3">Others</label>
+                    <div class="form__radio-group">
+                        <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio-input">
+                        <label for="contactChoice1" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Bug
+                        </label>
+                    </div>
+                    
+                    <div class="form__radio-group">
+                        <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio-input">
+                        <label for="contactChoice2" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Suggestion
+                        </label>
+                    </div>
+                    
+                    <div class="form__radio-group">
+                        <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio-input">
+                        <label for="contactChoice3" class="form__radio-label">
+                            <span class="form__radio-button"></span>
+                            Others
+                        </label>
+                    </div>  
                 </div>
 
                 <br>
@@ -111,18 +127,23 @@
                 <!--Feedback-->
 
                 <input type="submit" value="Send Feedback" class="btn form__button">
+
+                <div class="form__copyright">powered by Formspree</div>
             </form>
         </div>
 
-        <!--Footer TItle Box-->
-        <div class="footer__title-box">
-            <img src="" alt="" class="footer__logo">
-            <span class="footer__name">Ingredea</span>
-        </div>
-
-        <!-- copyright -->
-        <div class="form__copyright">
-            <span class="form__copyright-content">&copy;2018 Ingredea</span>
+        <div class="footer__content-box">
+            <!--Footer TItle Box-->
+            <div class="footer__title-box">
+                <i class="fab fa-500px" class="footer__logo"></i>
+                <!-- <img src="" alt="" class="footer__logo"> -->
+                <span class="footer__name">Ingredea</span>
+            </div>
+            
+            <!-- copyright -->
+            <div class="footer__copyright">
+                <span class="footer__copyright-content">&copy;2018 Ingredea</span>
+            </div>
         </div>
     </footer>
 </body>

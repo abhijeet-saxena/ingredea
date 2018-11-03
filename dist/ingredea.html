@@ -11,18 +11,21 @@
 
 <body>
     <div class="clarifai-div">
-        <input type="url" name="user-img-url" id="user-img-url">
+        <input type="url" name="user-img-url" id="user-img-url"><br>
         <button onclick="uploadImageToClarafai('url')">Upload URL</button>
         <br>
         <input type="file" name="user-img" id="user-img" accept="image/*">
         <button onclick="uploadImageToClarafai('image')">Upload Image</button>
         <br>
-        <div id="uplo">
-
+        <div id="user-dish-card" style="visibility: hidden">
+            <img src="" alt="Unable to load image" height="350px" width="350px" id="dish-img">
+            <ol id="mainI"></ol>
+            <ol id="addI"></ol>
+            <ol id="maybeI"></ol>
         </div>
     </div>
 </body>
 <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
-<script src="./main.js"></script>
+<script src="./ingredea.js"></script>
 
 </html>

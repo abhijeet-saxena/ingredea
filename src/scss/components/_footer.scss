@@ -1,29 +1,36 @@
-.footer {
-
-    color:$color-white;
+// paras: have you used postition absolute.. at which place...ok...wait a sec
+// arjun: sent...at one place ... radio button...in form
+.footer-expand {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     background-color: $color-black;
-    width: 100%;
+    grid-column: 1/-1;
+}
 
-    display: flex;
-    justify-content: space-around;
-
+.footer {
+    color: $color-white;
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 
     &__form-box {
-        margin: 5rem 0;
+        margin: 3rem 0;
+        grid-column: 1/ 6;
     }
 
     &__form-title {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
         margin-bottom: 1rem;
     }
 
     &__form-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
         margin-bottom: 2rem;
     }
 
     &__content-box {
+        grid-column: 6 / 11;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -31,10 +38,10 @@
     }
 
     &__title-box {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     &__copyright {
-        font-size:2.3rem;
+        font-size: 2.3rem;
     }
 }

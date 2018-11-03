@@ -82,3 +82,14 @@ main a {
   cursor: pointer;
   display: block;
 }
+
+.i-btn {
+  margin: 1em auto;
+  color: #ffffff;
+  background: #2b2b2b;
+  padding: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+}

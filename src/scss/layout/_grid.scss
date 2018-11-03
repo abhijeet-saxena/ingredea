@@ -1,6 +1,4 @@
-.header {
-    grid-column: 1/-1;
-    background: $color-black;
+.wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }

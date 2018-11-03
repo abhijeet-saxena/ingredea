@@ -1,0 +1,65 @@
+// $color-orange: #FF8F00;
+
+// $color-green: #5A8F29;
+
+// $color-blue: #3C7DC4;
+
+// $color-black: #2B2B2B;
+
+// $color-white: #fff;
+
+// $default-font-size: 1.6rem;
+
+.nav {
+    padding: 0.5rem 0;
+    grid-column: 2 / -2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title-box {
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 2rem;
+            padding: 0 1rem;
+            color: white;
+        }
+
+        .nav__name {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        &-item a {
+            font-size: 1.2rem;
+            display: block;
+            padding: 1rem;
+            color: white;
+
+            i {
+                color: white;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    &__search {
+        all: unset;
+        background: white;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5rem;
+        text-align: center;
+        width: 350px;
+    }
+
+    &__toggle {
+        display: none;
+    }
+}

@@ -1,11 +1,17 @@
-$font-color: #4527a0;
+@import "abstracts/function";
+@import "abstracts/mixins";
+@import "abstracts/reset";
+@import "abstracts/variable";
 
-body {
-  color: $font-color;
-  background: beige;
-}
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-h1 {
-  font-weight: 900;
-  font-family: "Courier New", Courier, monospace;
-}
+@import "components/footer";
+@import "components/header";
+
+@import "pages/home";
+
+
+

@@ -1,0 +1,15 @@
+{
+  "name": "ingredea",
+  "version": "1.0.0",
+  "description": "Foodies can now explore the ingredients and recipes for their favourite foods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "food",
+    "recipes"
+  ],
+  "author": "Team Ingredea",
+  "license": "MIT"
+}

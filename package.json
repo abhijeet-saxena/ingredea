@@ -11,5 +11,8 @@
     "recipes"
   ],
   "author": "Team Ingredea",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.14.3"
+  }
 }

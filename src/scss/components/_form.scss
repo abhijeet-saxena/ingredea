@@ -1,11 +1,17 @@
+//p:
+
+//a:
 .form {
-    // &__group:not(:last-child) {
-    //     margin-bottom: 1rem;
-    // }
+
+    margin-left: 1rem;
+
+    &__group:not(:last-child) {
+        margin-bottom: 1rem;
+    }
 
     &__text-area,
     &__input {
-        font-size: 1rem;
+        font-size: 2rem;
         font-family: inherit;
         color: $color-white;
         padding: 1rem 1.5rem;
@@ -39,12 +45,14 @@
             border-bottom: 3px solid $color-green;
         }
     }
+
     &__text-area {
-        height: 70px;
         margin-bottom: 1rem;
     }
+
     &__label {
-        font-size: 1rem;
+        color: $color-white;
+        font-size: 1.3rem;
         font-weight: 700;
         margin-left: 2rem;
         margin-top: 0.7rem;
@@ -58,9 +66,13 @@
         transform: translateY(-4rem);
     }
 
+
+
     &__radio-group {
         display: inline-block;
-        padding-left: 0.5rem;
+        &:not(:first-of-type){
+            padding-left: 1rem;
+        }
     }
 
     &__radio-input {
@@ -68,16 +80,16 @@
     }
 
     &__radio-label {
-        font-size: 1rem;
+        font-size: 1.7rem;
         cursor: pointer;
         position: relative;
-        padding-left: 3rem;
+        padding-left: 4rem;
     }
 
     &__radio-button {
-        height: 2rem;
-        width: 2rem;
-        border: 5px solid $color-green;
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-grey;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
@@ -91,7 +103,7 @@
             width: 1.3rem;
             border-radius: 50%;
             @include absCenter;
-            background-color: $color-green;
+            background-color: $color-grey;
             opacity: 0;
             transition: opacity 0.2s;
         }
@@ -101,8 +113,11 @@
         opacity: 1;
     }
 
+    &__button {
+        margin-top: 2rem;
+    }
+
     &__copyright {
-        margin-top: -3rem;
         text-align: end;
         font-size: 1.4rem;
         color: rgba($color-white, 0.7);

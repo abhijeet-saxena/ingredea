@@ -1,6 +1,51 @@
 .header {
-    grid-column: 1/-1;
+    padding: .5rem 2rem;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex: 0 0 100%; 
     background: $color-black;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+
+    &__title-box {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: $color-white;
+    }
+
+    &__name { 
+        font-size: 2rem;
+        color: $color-white;
+    }
+
+    &__list {
+        display: flex; 
+    }
+
+    &__list-item a { 
+        font-size: 1.2rem;
+        display: block;
+        padding: 1rem;
+        color: white;
+
+        i {
+            color: white;
+            margin-right: 0.5rem;
+        }
+    }
+
+    &__search {
+        all: unset;
+        background: white;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5rem;
+        text-align: center;
+        width: 350px;
+    }
 }

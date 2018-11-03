@@ -3,4 +3,4 @@ Foodies can now explore the ingredients and recipes for their favourite foods
 
 It can possibly suggest a food ideas to the user.
 
-In short A Foddies Social Media
+In short A Foodies Social Media

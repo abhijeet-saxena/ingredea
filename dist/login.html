@@ -6,15 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/abhi.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <label for="uname">Email</label>
-    <input type="email" id="uname" name="uname">
-    <label for="pwd">Password</label>
-    <input type="password" id="pwd" name="pwd">
-    <button onclick="login()">Login</button>
+    <header class="header">
+        <div class="header__title-box">
+            <a href="./index.html"><i class="fab fa-500px"></i>Ingredea</a>
+        </div>
+        <ul class="header__list">
+            <li class="header__list-item"><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li class="header__list-item"><a href="#"><i class="far fa-bookmark"></i>Bookmarks</a></li>
+            <li class="header__list-item"><a href="#"><i class="far fa-user"></i>Profile</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <form action="" onsubmit="return login()">
+            <div class="form-group">
+                <label for="uname">Email</label>
+                <input type="email" id="uname" name="uname">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd">
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <a href="./signup.html">Haven't registered yet ? Sign up with Ingredea</a>
+        </form>
+    </main>
 </body>
+
+<footer class="footer">
+    <h3><strong>Made with <span style="color: red">♥</span>
+        </strong> by <a style="color: white" href="https://github.com/rocky93/ingredea">Ingredea</a> &copy;2018
+    </h3>
+</footer>
 <script src="https://cdn.jsdelivr.net/faunadb/1.1/faunadb-min.js"></script>
 
 <script src="./main.js"></script>

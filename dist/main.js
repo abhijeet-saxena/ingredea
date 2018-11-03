@@ -26,6 +26,8 @@ var login = () => {
         alert("Invalid credentials");
       }
     });
+
+  return false;
 };
 
 var register = () => {
@@ -61,4 +63,5 @@ var register = () => {
       console.log(err);
       alert("You did something wrong ");
     });
+  return false;
 };

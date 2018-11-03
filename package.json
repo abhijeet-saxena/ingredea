@@ -4,7 +4,8 @@
   "description": "Foodies can now explore the ingredients and recipes for their favourite foods",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/scss/main.scss dist/css/styles.css --no-source-map"
   },
   "keywords": [
     "food",

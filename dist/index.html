@@ -6,13 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ingredea</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <h1>Hello World, Welcome to Ingredea</h1>
-    <p>checking the live server
-    </p>
+    <header class="header">
+        <!-- Header -->
+
+        <div class="header__title-box">
+            <!-- Main title with logo -->
+            <!-- <img src="" alt="" class="header__logo"> -->
+            <i class="fab fa-500px"></i>
+            <span class="header__name">Ingredea</span>
+        </div>
+
+        <input type="text" placeholder="Search" class="header__search"> <!-- Search bar -->
+
+        <ul class="list">
+            <!-- Information -->
+            <li class="list__item"><a href="#">Home</a></li>
+            <li class="list__item"><a href="#">Profile</a></li>
+            <li class="list__item"><a href="#">Pinned</a></li>
+        </ul>
+
+        <!-- Information toggle -->
+        <div class="toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <section class="section-content">
+
+        <div class="card">
+            <!-- Recipe card -->
+            <div class="card__title">
+                <!-- card title -->
+                <img class="user__image" src=" https://randomuser.me/api/portraits/men/27.jpg" altUser name="">
+                <!-- User image  -->
+                <div class="user__name">xyz123</div> <!-- User name -->
+            </div>
+            <div class="card__mainImg"><img src="" alt=""></div> <!-- images by user -->
+            <div class="card__activity">
+                <div class="card__activity-like"><i class="far fa-thumbs-up"></i>10</div> <!-- Like the Recipe -->
+                <input class="card__activity-addComment" type="text" placeholder="Comment..."> <!-- Comments-->
+                <div class="card__activity-recipe">Recipe<i class="fas fa-caret-down"></i></div> <!-- The Recipe -->
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="form-box" class="form-box">
+            <!--Footer Form-->
+            <h3 class="form-box__title">
+                <!--FORM Title-->
+                Send us your feedback!
+            </h3>
+            <p class="form-box__text">
+                <!--FORM text-->
+                Do you have some suggestions or found some bugs ?
+                Let us know in the field below.
+            </p>
+
+            <form action="https://formspree.io/shopforabhi@gmail.com" method="POST" class="form" class="form">
+                <!--Real Form-->
+
+                <div class="form__group">
+                    <!--Name Input-->
+                    <label for="namess=" form__name"" class="form__name">
+                        Name:
+                    </label>
+                    <input type="t class=" form__name-input"ext" name="name" class="form__name-input">
+                </div>
+
+                <div class="form__group">
+                    <!--Email input-->
+                    <label for="email" class="form__mail">
+                        Email
+                    </label>
+                    <input type="email" name="_replyto" class="form__mail-input">
+                </div>
+
+                <div class="form__group">
+                    <!--Radio Group-->
+                    <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio--bug">
+                    <label for="contactChoice1">Bug</label>
+
+                    <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio--suggest">
+                    <label for="contactChoice2">Suggestion</label>
+
+                    <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio--other">
+                    <label for="contactChoice3">Others</label>
+                </div>
+
+                <br>
+
+                <textarea name="feedback" placeholder="Describe your experience here..." rows="4" cols="50" class="form__text-area"></textarea>
+                <!--Feedback-->
+
+                <input type="submit" value="Send Feedback" class="btn form__button">
+            </form>
+        </div>
+
+        <!--Footer TItle Box-->
+        <div class="footer__title-box">
+            <img src="" alt="" class="footer__logo">
+            <span class="footer__name">Ingredea</span>
+        </div>
+
+        <!-- copyright -->
+        <div class="form__copyright">
+            <span class="form__copyright-content">&copy;2018 Ingredea</span>
+        </div>
+    </footer>
 </body>
 
 </html>

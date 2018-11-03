@@ -1,7 +1,13 @@
-body {
-  color: #4527a0;
-  background: beige; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-h1 {
-  font-weight: 900;
-  font-family: "Courier New", Courier, monospace; }
+html {
+  font-size: 62.5%;
+  /* of root font size 16px */ }
+
+body {
+  box-sizing: border-box; }

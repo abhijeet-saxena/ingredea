@@ -3,6 +3,9 @@
     font-size: 2rem;
     background-color: $color-white;
 
+    @include respond(phone) {
+        font-size: 1.5rem;   
+    }//
     &--orange {
         background-image: linear-gradient(to right bottom,
                     $color-orange-dark,
@@ -25,6 +28,13 @@
         background-image: linear-gradient(to right bottom,
                     $color-yellow-dark,
                     $color-yellow);
+    }
+
+    &--multi {
+        background-image: linear-gradient(to right bottom,
+                    $color-orange,
+                    $color-yellow,
+                    $color-green);//keeep it...looking gud..no prob
     }
 
 }

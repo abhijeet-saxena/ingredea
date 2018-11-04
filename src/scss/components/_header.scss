@@ -8,6 +8,10 @@
     border-bottom:3px solid rgba($color-black, .9);
     box-shadow: 3px 4px 12px 0 $color-black;
 
+    @include respond(phone) {
+        flex-direction: column;     
+    } 
+
     &__name {
         margin: 1rem 10rem;
         display: flex;
@@ -17,7 +21,7 @@
 
     &__logo {
         font-size: 3rem;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         color: $color-black;
         width: 9rem;
     }
@@ -35,11 +39,21 @@
     &__list {
         margin: 1rem 10rem;
         display: flex;
+        @include respond(phone) {
+            margin: .5rem 0rem;  
+        }
+    }
+
+    &__list > * {
+        @include respond(tab-port){
+            display: flex;
+            align-items: center;  
+        }
     }
 
     &__list > * a { 
         font-size: 2rem;
-        display: block;
+        display: flex;
         padding: 1.3rem;
         height: 5rem;
         color: $color-black;

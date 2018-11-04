@@ -10,10 +10,22 @@
     border-bottom-right-radius: 5rem; 
     padding: 4rem;
 
+    @include respond(tab-port){
+        width: 70%; 
+    }
+
+    @include respond(phone){  //import likh dia tha maine.. lol
+        border-radius: 0;
+    }
+
     h3 {
         font-size: 5rem;
         font-weight: 300;
         margin-bottom: 1.5rem;
+
+        @include respond(tab-port){
+            font-size: 4rem;  
+        }
     }
 
     p {
@@ -21,6 +33,10 @@
         font-weight: 800;
         margin-bottom: 2rem;
         margin-left: 1rem;
+
+        @include respond(tab-port){
+            font-size: 1.6rem;  
+        }
     }
     
 }

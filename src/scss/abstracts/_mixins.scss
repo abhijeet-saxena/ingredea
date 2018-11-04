@@ -37,11 +37,11 @@ ORDER: BASE + Typography > generl layout + grid > page layout > components
         @media only screen and (max-width: 56.25em) {@content};   //900px
     }
 
-    @if $breakpoint == tab-land {
+    @if $breakpoint == tab-land {  //ye 1200 pr aao   
         @media only screen and (max-width: 75em) {@content};     //1200px
     }   
 
-    @if $breakpoint == big-desktop {
+    @if $breakpoint == big-desktop { 
         @media only screen and (min-width: 112.5em) {@content};     //1800px
     }
 }

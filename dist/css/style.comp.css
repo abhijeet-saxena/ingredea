@@ -481,7 +481,8 @@ ul li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 5rem; }
+  margin-top: 5rem;
+  min-width: 60%; }
   .ingredea h3 {
     font-size: 5rem;
     margin-bottom: 1.5rem;

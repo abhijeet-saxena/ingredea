@@ -23,7 +23,7 @@ ul li {
   font-size: 2rem;
   background-color: #fff; }
   .body--orange {
-    background-image: linear-gradient(to right bottom, #e65613, #ff450c); }
+    background-image: linear-gradient(to right bottom, #e65613, #ff5f2e); }
   .body--blue {
     background-image: linear-gradient(to right bottom, #003444, #004e66); }
   .body--green {
@@ -58,6 +58,14 @@ ul li {
   justify-content: space-around;
   padding: 1rem;
   font-size: 2.3rem; }
+  .footer__title {
+    display: flex;
+    align-items: center; }
+  .footer__logo {
+    width: 3.5rem;
+    margin-right: 1rem; }
+  .footer div span b {
+    color: orangered; }
 
 .form-box {
   width: 55%;
@@ -208,14 +216,16 @@ ul li {
   background: #f6f6e1;
   border-bottom: 3px solid rgba(43, 43, 43, 0.9);
   box-shadow: 3px 4px 12px 0 #2B2B2B; }
-  .header__title-box {
+  .header__name {
     margin: 1rem 10rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
   .header__logo {
     font-size: 3rem;
     padding: 0 1.5rem;
-    color: #2B2B2B; }
+    color: #2B2B2B;
+    width: 9rem; }
   .header__name {
     font-size: 3rem;
     color: #2B2B2B;

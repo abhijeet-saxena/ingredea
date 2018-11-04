@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ingredea</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-</head> 
+</head>
 
 <body class="body body--orange">
     <header class="header">
-        <div class="header__title-box">
-            <a href="./index.html" class="header__name"><i class="fab fa-500px header__logo"></i>Ingredea</a>
+        <div>
+            <a href="./index.html" class="header__name">
+                <img src="../logo.png" alt="" class="header__logo">
+                Ingredea
+            </a>
         </div>
         <ul class="header__list">
             <li><a href="./login.html"><i class="fas fa-home"></i>Login</a></li>
@@ -24,7 +28,7 @@
             <li><a href="#"><i class="far fa-user"></i>Profile</a></li>
         </ul>
     </header>
-    
+
     <main class="container section-form">
         <div class="form-box">
             <h3>Send us your feedback!</h3>
@@ -33,39 +37,39 @@
                 Do you have some suggestions or found some bugs ?
                 Let us know in the field below.
             </p>
-    
+
             <form action="https://formspree.io/shopforabhi@gmail.com" method="POST" class="form">
-    
+
                 <div>
                     <input type="text" name="name" class="form__input" placeholder="Your Name">
                     <label for="name" class="form__label">
                         Your Name
                     </label>
                 </div>
-    
+
                 <div>
                     <input type="email" name="_replyto" class="form__input" placeholder="Your Email">
                     <label for="email" class="form__label">
                         Your Email
                     </label>
                 </div>
-    
+
                 <div>
-    
+
                     <div>
                         <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio-input">
                         <label for="contactChoice1" class="form__radio-label">
                             <span></span> Bug
                         </label>
                     </div>
-    
+
                     <div>
                         <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio-input">
                         <label for="contactChoice2" class="form__radio-label">
                             <span></span> Suggestion
                         </label>
-                    </div> 
-    
+                    </div>
+
                     <div>
                         <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio-input">
                         <label for="contactChoice3" class="form__radio-label">
@@ -73,26 +77,24 @@
                         </label>
                     </div>
                 </div>
-    
+
                 <textarea name="feedback" placeholder="Describe your experience here..." rows="4" cols="50"></textarea>
-    
+
                 <input type="submit" value="Send Feedback" class="btn form__button">
-    
+
                 <div class="form__copyright">powered by Formspree</div>
             </form>
         </div>
     </main>
-    
-    
-    
+
+
+
     <footer class="footer">
-            <div>
-                <i class="fab fa-500px" class="footer__logo"></i>
+            <div class="footer__title">
+                <img src="../logo.png" alt="" class="footer__logo">
                 <span">Ingredea</span>
             </div>
-            <div>
-                <span>Made with ♥ by Ingredea &copy;2018 </span>
-            </div>
+            <div><span>Made with  <b>&#10084;</b> by Ingredea &copy;2018 </span></div>
     </footer>
 </body>
 

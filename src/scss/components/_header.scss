@@ -8,16 +8,18 @@
     border-bottom:3px solid rgba($color-black, .9);
     box-shadow: 3px 4px 12px 0 $color-black;
 
-    &__title-box {
+    &__name {
         margin: 1rem 10rem;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     &__logo {
         font-size: 3rem;
         padding: 0 1.5rem;
         color: $color-black;
+        width: 9rem;
     }
 
     &__name { 

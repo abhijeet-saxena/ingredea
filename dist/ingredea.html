@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intelligent Scan</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
@@ -16,7 +17,10 @@
 <body class="body body--yellow">
     <header class="header">
         <div class="header__title-box">
-            <a href="./index.html" class="header__name"><i class="fab fa-500px header__logo"></i>Ingredea</a>
+            <a href="./index.html" class="header__name">
+                <img src="../logo.png" alt="" class="header__logo">
+                Ingredea
+            </a>
         </div>
         <ul class="header__list">
             <li><a href="./login.html" class="yellow"><i class="fas fa-home"></i>Login</a></li>
@@ -30,7 +34,7 @@
             <div>
                 <input type="url" name="user-img-url" id="user-img-url" class="form__input" placeholder="Image URL">
                 <button class="btn form__button" onclick="uploadImageToClarafai('url')">Upload URL</button>
-            </div> 
+            </div>
             <br>
             <div>
                 <input type="file" name="user-img" id="user-img" accept="image/*" class="form__input--file">
@@ -39,7 +43,7 @@
                 <button class="btn form__button" onclick="uploadImageToClarafai('image')">Upload Image</button>
             </div>
 
-        </div>  
+        </div>
 
         <div id="user-dish-card" style="visibility: hidden">
             <img src="" alt="Unable to load image" height="350px" width="350px" id="dish-img">
@@ -50,13 +54,11 @@
     </main>
 
     <footer class="footer">
-        <div>
-            <i class="fab fa-500px" class="footer__logo"></i>
+        <div class="footer__title">
+            <img src="../logo.png" alt="" class="footer__logo">
             <span">Ingredea</span>
         </div>
-        <div>
-            <span>Made with ♥ by Ingredea &copy;2018 </span>
-        </div>
+        <div><span>Made with <b>&#10084;</b> by Ingredea &copy;2018 </span></div>
     </footer>
 </body>
 

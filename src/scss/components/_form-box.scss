@@ -1,16 +1,26 @@
 .form-box {
     width: 80%;
-    background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark);  //awesome
-    padding: 2rem;
+    color: $color-white;  
+    background-image: linear-gradient(
+        to right bottom, 
+        $color-orange-light, 
+        $color-orange-dark);
+    box-shadow: 2px 4px 20px black;
+        
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem; 
+    padding: 8rem;
 
-    &__form-title {
+    h3 {
         font-size: 5rem;
         font-weight: 300;
         margin-bottom: 1rem;
     }
 
-    &__form-text {
+    p {
         font-size: 2rem;
+        font-weight: 300;
+
         margin-bottom: 2rem;
         margin-left: 1rem;
     }

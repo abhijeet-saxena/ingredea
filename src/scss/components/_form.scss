@@ -5,20 +5,45 @@
 
     margin-left: 1rem;
 
-    &__group:not(:last-child) {
+    & > div:not(:last-child) {
         margin-bottom: 1rem;
     }
 
-    &__text-area,
+    & > div:last-of-type {
+        position: relative;
+        @include clearfix;
+    }
+
+    &__choose {
+        position: absolute;
+        top:0;  
+        left:1rem;
+        z-index: 10;
+
+        background-color: $color-blue-light;
+        border: none;
+        color: $color-white;
+        font-size: 1.8rem;
+        width: 40%;  
+        padding: .7rem 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+
+        box-shadow: 2px 2px 15px 2px rgba($color-grey, 0.7);
+
+        display: block;
+    }
+
+    textarea,
     &__input {
         font-size: 2rem;
         font-family: inherit;
         color: $color-white;
         padding: 1rem 1.5rem;
         border-radius: 2px;
-        background-color: rgba($color-grey, 0.8);
+        background-color: $color-orange-light;
         border: none;
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid transparent; 
         width: 70%;
         display: block;
         transition: all 0.3s;
@@ -29,8 +54,7 @@
 
         &::-moz-placeholder {
             color: rgba($color-white, 0.7);
-        }
-
+        }      
         &:focus:invalid {
             border-bottom: 3px solid $color-orange;
         }
@@ -41,12 +65,23 @@
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-white, 0.1);
-            border-bottom: 3px solid $color-green;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            border-bottom: 3px solid $color-green-light;
+        }
+
+        &--file {
+            position: absolute;
+            z-index: 15;
+            top: 0;
+            left: 0;
+            border: none;
+            font-size: 2.5rem;
+            display: block;
+            opacity: 0;
         }
     }
 
-    &__text-area {
+    textarea {
         margin-bottom: 1rem;
     }
 
@@ -67,8 +102,7 @@
     }
 
 
-
-    &__radio-group {
+    & > div > div {
         display: inline-block;
         &:not(:first-of-type){
             padding-left: 1rem;
@@ -86,10 +120,10 @@
         padding-left: 4rem;
     }
 
-    &__radio-button {
+    &__radio-label span {
         height: 3rem;
         width: 3rem;
-        border: 5px solid $color-grey;
+        border: 5px solid $color-white;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
@@ -103,23 +137,38 @@
             width: 1.3rem;
             border-radius: 50%;
             @include absCenter;
-            background-color: $color-grey;
+            background-color: $color-offwhite;
             opacity: 0;
             transition: opacity 0.2s;
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    &__radio-input:checked ~ &__radio-label span::after {
         opacity: 1;
     }
 
     &__button {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     &__copyright {
-        text-align: end;
+        margin-top: -3rem;
+        text-align: end;  
         font-size: 1.4rem;
         color: rgba($color-white, 0.7);
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: $color-white;
+    }
+
+    &__link span {//haha..haa...
+        text-transform: uppercase;
+        text-decoration: underline; //Mutual funds shi h .. lol ...discor pr dhikaata hu 
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }

@@ -25,19 +25,21 @@
         </ul>
     </header>
 
-    <main class="container">
-        <form action="" onsubmit="return login()">
-            <div class="form-group">
-                <label for="uname">Email</label>
-                <input type="email" id="uname" name="uname">
+    <main class="container section-form">  
+        <form action="" onsubmit="return login()" class="form form-box">
+            <div>
+                <input class="form__input" type="email" id="uname" name="uname" placeholder="Email">
+                <label for="uname" class="form__label">Email</label>
             </div>
-            <div class="form-group">
-                <label for="pwd">Password</label>
-                <input type="password" id="pwd" name="pwd">
+            <div>
+                <input type="password" id="pwd" name="pwd" class="form__input" placeholder="Password">
+                <label for="pwd" class="form__label">Password</label>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn form__button">Log Me In</button>
 
-            <a href="./signup.html">Haven't registered yet ? Sign up with Ingredea</a>
+            <a href="./signup.html" class="form__link">Haven't registered yet ? 
+                <span>Sign up</span> with Ingredea
+            </a>
         </form>
     </main>
 

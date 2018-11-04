@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-</head>
+</head> 
 
 <body>
     <header class="header">
@@ -25,77 +25,62 @@
         </ul>
     </header>
     
-    <main class="container">
-        <section class="section-form">
-            <!-- styling of footer__form-box -->
-            <div class="form-box">
-                <!--Footer Form-->
-                <h3 class="form-box__form-title">
-                    <!--FORM Title-->
-                    Send us your feedback!
-                </h3>
-                <p class="form-box__form-text">
-                    <!--FORM text-->
-                    Do you have some suggestions or found some bugs ?
-                    Let us know in the field below.
-                </p>
-        
-                <form action="https://formspree.io/shopforabhi@gmail.com" method="POST" class="form">
-                    <!--Real Form-->
-        
-                    <div class="form__group">
-                        <!--Name Input-->
-                        <input type="text" name="name" class="form__input" placeholder="Your Name">
-                        <label for="name" class="form__label">
-                            Your Name
+    <main class="container section-form">
+        <div class="form-box">
+            <h3>Send us your feedback!</h3>
+
+            <p>
+                Do you have some suggestions or found some bugs ?
+                Let us know in the field below.
+            </p>
+    
+            <form action="https://formspree.io/shopforabhi@gmail.com" method="POST" class="form">
+    
+                <div>
+                    <input type="text" name="name" class="form__input" placeholder="Your Name">
+                    <label for="name" class="form__label">
+                        Your Name
+                    </label>
+                </div>
+    
+                <div>
+                    <input type="email" name="_replyto" class="form__input" placeholder="Your Email">
+                    <label for="email" class="form__label">
+                        Your Email
+                    </label>
+                </div>
+    
+                <div>
+    
+                    <div>
+                        <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio-input">
+                        <label for="contactChoice1" class="form__radio-label">
+                            <span></span> Bug
                         </label>
                     </div>
-        
-                    <div class="form__group">
-                        <!--Email input-->
-                        <input type="email" name="_replyto" class="form__input" placeholder="Your Email">
-                        <label for="email" class="form__label">
-                            Your Email
+    
+                    <div>
+                        <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio-input">
+                        <label for="contactChoice2" class="form__radio-label">
+                            <span></span> Suggestion
+                        </label>
+                    </div> 
+    
+                    <div>
+                        <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio-input">
+                        <label for="contactChoice3" class="form__radio-label">
+                            <span></span> Others
                         </label>
                     </div>
-        
-                    <div class="form__group">
-                        <!--Radio Groups-->
-        
-                        <div class="form__radio-group">
-                            <input type="radio" id="contactChoice1" name="type" value="Bug" class="form__radio-input">
-                            <label for="contactChoice1" class="form__radio-label">
-                                <span class="form__radio-button"></span>
-                                Bug
-                            </label>
-                        </div>
-        
-                        <div class="form__radio-group">
-                            <input type="radio" id="contactChoice2" name="type" value="Suggestion" class="form__radio-input">
-                            <label for="contactChoice2" class="form__radio-label">
-                                <span class="form__radio-button"></span>
-                                Suggestion
-                            </label>
-                        </div>
-        
-                        <div class="form__radio-group">
-                            <input type="radio" id="contactChoice3" name="type" value="Others" class="form__radio-input">
-                            <label for="contactChoice3" class="form__radio-label">
-                                <span class="form__radio-button"></span>
-                                Others
-                            </label>
-                        </div>
-                    </div>
-        
-                    <textarea name="feedback" placeholder="Describe your experience here..." rows="4" cols="50" class="form__text-area"></textarea>
-                    <!--Feedback-->
-        
-                    <input type="submit" value="Send Feedback" class="btn form__button">
-        
-                    <div class="form__copyright">powered by Formspree</div>
-                </form>
-            </div>
-        </section>
+                </div>
+    
+                <textarea name="feedback" placeholder="Describe your experience here..." rows="4" cols="50"></textarea>
+    
+                <input type="submit" value="Send Feedback" class="btn form__button">
+    
+                <div class="form__copyright">powered by Formspree</div>
+            </form>
+        </div>
     </main>
     
     

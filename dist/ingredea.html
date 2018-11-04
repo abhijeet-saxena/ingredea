@@ -25,15 +25,21 @@
         </ul>
     </header>
 
-    <main class="container">
-        <div class="form-group">
-            <input type="url" name="user-img-url" id="user-img-url">
-            <button class="i-btn" onclick="uploadImageToClarafai('url')">Upload URL</button>
-        </div>
-        <div class="form-group">
-            <input type="file" name="user-img" id="user-img" accept="image/*">
-            <button class="i-btn" onclick="uploadImageToClarafai('image')">Upload Image</button>
-        </div>
+    <main class="container section-form">
+        <div class="form form-box">
+            <div>
+                <input type="url" name="user-img-url" id="user-img-url" class="form__input">
+                <button class="btn form__button" onclick="uploadImageToClarafai('url')">Upload URL</button>
+            </div> 
+            <br>
+            <div>
+                <input type="file" name="user-img" id="user-img" accept="image/*" class="form__input--file">
+                <button class="form__choose">Choose file</button>
+                <br>
+                <button class="btn form__button" onclick="uploadImageToClarafai('image')">Upload Image</button>
+            </div>
+
+        </div>  
 
         <div id="user-dish-card" style="visibility: hidden">
             <img src="" alt="Unable to load image" height="350px" width="350px" id="dish-img">

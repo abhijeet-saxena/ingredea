@@ -11,6 +11,10 @@
         flex-direction: column;   
         height: 80rem;
     }
+
+    @include respond(phone){  
+        width: 90%;
+    }
        
     &__left {
         flex: 0 0 50%; 

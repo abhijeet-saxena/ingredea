@@ -21,4 +21,8 @@
     &  div  span  b {
         color: rgba(orangered, 1);
     }
+
+    @include respond(phone){  
+        flex-direction: column;
+    }
 }

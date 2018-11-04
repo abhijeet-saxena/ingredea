@@ -91,6 +91,9 @@ ul li {
     .card {
       flex-direction: column;
       height: 80rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .card {
+      width: 90%; } }
   .card__left {
     flex: 0 0 50%; }
     @media only screen and (max-width: 56.25em) {
@@ -217,6 +220,9 @@ ul li {
     margin-right: 1rem; }
   .footer div span b {
     color: orangered; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      flex-direction: column; } }
 
 .form-box {
   width: 55%;
@@ -231,7 +237,8 @@ ul li {
       width: 70%; } }
   @media only screen and (max-width: 37.5em) {
     .form-box {
-      border-radius: 0; } }
+      border-radius: 0;
+      width: 90%; } }
   .form-box h3 {
     font-size: 5rem;
     font-weight: 300;
@@ -407,7 +414,8 @@ ul li {
   box-shadow: 3px 4px 12px 0 #2B2B2B; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding: .5rem; } }
   .header__name {
     margin: 1rem 10rem;
     display: flex;
@@ -443,6 +451,9 @@ ul li {
     margin: auto 2rem;
     border-bottom: 0px solid #ff5f2e;
     transition: all .1s; }
+    @media only screen and (max-width: 37.5em) {
+      .header__list > * a {
+        margin: 0; } }
     .header__list > * a.blue {
       border-bottom: 0px solid #004e66; }
     .header__list > * a.green {

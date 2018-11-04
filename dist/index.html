@@ -167,17 +167,19 @@
     <footer class="footer">
         <div class="footer__title">
             <img src="./img/logo.png" alt="" class="footer__logo">
-            <span">Ingredea</span>
+            <span>Ingredea</span>
         </div>
         <div><span>Made by Ingredea &copy;2018 </span></div>
     </footer>
 
 </body>
-
-<!-- <footer class="footer">
-    <h3><strong>Made with <span style="color: red">♥</span>
-        </strong> by <a style="color: white" href="https://github.com/rocky93/ingredea">Ingredea</a> &copy;2018
-    </h3>
-</footer> -->
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('./service-worker.js')
+            .then(function () {
+                console.log('Service Worker Registered');
+            });
+    }</script>
 
 </html>

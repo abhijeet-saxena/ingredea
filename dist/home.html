@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
@@ -16,7 +16,7 @@
 <body>
     <header class="header">
         <div class="header__title-box">
-            <a href="./index.html" class="header__name"><i class="fab fa-500px header__logo"></i>Ingredea</a>
+            <a href="./index.html"><i class="fab fa-500px"></i>Ingredea</a>
         </div>
         <ul class="header__list">
             <li class="header__list-item"><a href="./login.html"><i class="fas fa-home"></i>Login</a></li>
@@ -29,30 +29,16 @@
 
         <h1>Our Home Page content depending onlogin</h1>
     </main>
-
-    <footer class="footer">
-    
-        <div class="footer__content-box">
-            <!--Footer TItle Box-->
-            <div class="footer__title-box">
-                <i class="fab fa-500px" class="footer__logo"></i>
-                <!-- <img src="" alt="" class="footer__logo"> -->
-                <span class="footer__name">Ingredea</span>
-            </div>
-    
-            <!-- copyright -->
-            <div class="footer__copyright">
-                <span class="footer__copyright-content">Made with ♥ by Ingredea &copy;2018 </span>
-            </div>
-        </div>
-    
-    </footer>
 </body>
 
+<footer class="footer">
+    <h3><strong>Made with <span style="color: red">♥</span>
+        </strong> by <a style="color: white" href="https://github.com/rocky93/ingredea">Ingredea</a> &copy;2018
+    </h3>
+</footer>
 <script>
     window.onload = () => {
         if (!sessionStorage.getItem("isLoggedIn")) self.location = "./index.html";
-    }
-</script>
+    }</script>
 
 </html>

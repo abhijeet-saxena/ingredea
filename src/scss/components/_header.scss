@@ -1,35 +1,33 @@
 .header {
     padding: .5rem 2rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: space-evenly;
+    justify-content: space-evenly;
     flex: 0 0 100%; 
     background: $color-black;
 
     &__title-box {
-        margin: 1rem 10rem;
         display: flex;
         align-items: center;
     }
 
     &__logo {
-        font-size: 3rem;
-        padding: 0 1.5rem;
+        font-size: 2rem;
+        padding: 0 1rem;
         color: $color-white;
     }
 
     &__name { 
-        font-size: 3rem;
+        font-size: 2rem;
         color: $color-white;
     }
 
     &__list {
-        margin: 1rem 10rem;
-        display: flex;
+        display: flex; 
     }
 
     &__list-item a { 
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         display: block;
         padding: 1rem;
         color: white;
@@ -40,14 +38,14 @@
         }
     }
 
-    // &__search {
-    //     all: unset;
-    //     background: white;
-    //     padding: 0.5rem;
-    //     font-size: 1rem;
-    //     border: 1px solid black;
-    //     border-radius: 5rem;
-    //     text-align: center;
-    //     width: 350px;
-    // }
+    &__search {
+        all: unset;
+        background: white;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid black;
+        border-radius: 5rem;
+        text-align: center;
+        width: 350px;
+    }
 }

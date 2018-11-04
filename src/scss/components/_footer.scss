@@ -1,13 +1,16 @@
+// paras: have you used postition absolute.. at which place...ok...wait a sec
+// arjun: sent...at one place ... radio button...in form
+
+
 .footer {
     background-color: $color-black;
     color: $color-white;
-    width: 100%;
     
     &__content-box {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 1rem;
+        padding: 3rem;
     }
 
     &__title-box {

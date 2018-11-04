@@ -61,7 +61,7 @@ main {
 }
 
 .form-group {
-  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .form-group input {
@@ -92,4 +92,29 @@ main a {
   outline: none;
   cursor: pointer;
   display: inline-block;
+}
+
+#user-dish-card img{
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#user-dish-card ol{
+  display: inline-block;
+  width: 20%;
+  padding-left: 2em;
+}
+
+#user-suggestions ul{
+  text-align: left;
+}
+
+#user-suggestions h3{
+  text-align: left;
+  text-decoration: underline;
+}
+
+#ingredea{
+  padding: 0;
 }

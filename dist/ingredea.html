@@ -27,7 +27,7 @@
         </ul>
     </header>
 
-    <main class="container">
+    <main class="container" id="ingredea">
         <div class="form-group">
             <input type="url" name="user-img-url" id="user-img-url">
             <button class="i-btn" onclick="uploadImageToClarafai('url')">Upload URL</button>
@@ -38,10 +38,14 @@
         </div>
 
         <div id="user-dish-card" style="visibility: hidden">
-            <img src="" alt="Unable to load image" height="350px" width="350px" id="dish-img">
+            <img src="" alt="Unable to load image" height="200px" width="200px" id="dish-img">
             <ol id="mainI"></ol>
             <ol id="addI"></ol>
             <ol id="maybeI"></ol>
+        </div>
+
+        <div id="user-suggestions">
+
         </div>
     </main>
 </body>

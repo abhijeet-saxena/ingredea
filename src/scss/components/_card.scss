@@ -1,16 +1,11 @@
 .card {
     width: 60%; 
-    background-image: linear-gradient(
-            to right bottom,
-            $color-orange-light,
-            $color-orange-dark);
-            
+    background-color: $color-white;   
     margin: 5rem auto; 
     display: flex;
     height: 45rem;   
-    color: $color-white;  
+    color: $color-black;  
     box-shadow: -3px 0px 20px 0px black;
-
        
     &__left {
         flex: 0 0 50%;  
@@ -23,6 +18,8 @@
     }
 
     &__right {
+        box-shadow: -9px 0px 20px black;
+
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
@@ -36,7 +33,10 @@
     
     &__name {  
         font-size: 3rem;
-        padding: 1rem;
+        padding: 1rem; 
+        letter-spacing: 1px;    
+        font-weight: 600;
+        color: $color-orange;
     }
 
     &__ingredients {
@@ -51,6 +51,10 @@
             flex: 0 0 50%;
             font-size: 2rem;
             padding: .5rem;
+
+            i {
+                color: $color-orange;
+            }
         }
     }
 
@@ -71,22 +75,22 @@
     &__comment {
         font-size: 1.8rem;
         font-family: inherit;
-        color: $color-white;
+        color: $color-black;
         padding: .5rem;
         border-radius: 2px;
         background-color: transparent;
         border: none;
-        border-bottom: 3px solid $color-white;
+        border-bottom: 3px solid $color-black;
         display: block;
         width: 50%;
         transition: all 0.3s;
 
         &::-webkit-input-placeholder {
-            color: rgba($color-white, 0.7);
+            color: rgba($color-black, 0.7);  
         }
 
         &::-moz-placeholder {
-            color: rgba($color-white, 0.7);
+            color: rgba($color-black, 0.7);
         }      
         
 
@@ -99,13 +103,20 @@
 
     &__see-comments:link,
     &__see-comments:visited {
-        color: $color-white;    
+        color: $color-grey;
+        
+        transition: color .2s;
+        &:hover{
+            color: $color-green;
+        }
     }
 }
 
 .user {
     display: flex;
-    align-items: center; 
+    align-items: center;
+    align-self: center;
+    height: 2rem; 
 
     &__image { 
         width: 3.5rem;
@@ -115,7 +126,12 @@
     }
 
     &__name {
-        font-size: 1.8rem; 
+        height: 100%;
+        font-size: 1.8rem;
+        cursor: pointer; 
+        &:hover{
+            color: $color-orange;
+        }
     }
 
 }

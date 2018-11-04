@@ -1,0 +1,123 @@
+.card {
+    width: 60%; 
+    background-image: linear-gradient(
+            to right bottom,
+            $color-orange-light,
+            $color-orange-dark);
+            
+    margin: 5rem auto; 
+    display: flex;
+    height: 45rem;   
+    color: $color-white;  
+    box-shadow: -3px 0px 20px 0px black;
+
+       
+    &__left {
+        flex: 0 0 50%;  
+    }
+
+    &__left img {
+        width: 100%;
+        height: 100%; 
+        object-fit: cover;      
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        padding: 1.5rem;
+    }
+
+    &__right div:first-child {  
+        display: flex;
+        justify-content: space-between;  
+    }  
+    
+    &__name {  
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    &__ingredients {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto; 
+        overflow-x: hidden;
+        height: 30%;   
+        margin-left: 2.5rem;  
+
+        & > * {
+            flex: 0 0 50%;
+            font-size: 2rem;
+            padding: .5rem;
+        }
+    }
+
+    &__procedure {
+        margin-top: 1.8rem;  
+        height: 30%;
+        overflow-y: auto; 
+    }
+
+
+    &__actions {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+    }
+
+
+    &__comment {
+        font-size: 1.8rem;
+        font-family: inherit;
+        color: $color-white;
+        padding: .5rem;
+        border-radius: 2px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $color-white;
+        display: block;
+        width: 50%;
+        transition: all 0.3s;
+
+        &::-webkit-input-placeholder {
+            color: rgba($color-white, 0.7);
+        }
+
+        &::-moz-placeholder {
+            color: rgba($color-white, 0.7);
+        }      
+        
+
+        &:focus {
+            outline: none;  
+            border-bottom: 3px solid $color-green-light;
+        }
+
+    }
+
+    &__see-comments:link,
+    &__see-comments:visited {
+        color: $color-white;    
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center; 
+
+    &__image { 
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;  
+        margin-left: 1rem; 
+    }
+
+    &__name {
+        font-size: 1.8rem; 
+    }
+
+}
+
+ 

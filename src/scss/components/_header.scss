@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: space-around;
     flex: 0 0 100%; 
-    background: $color-black;
+    background: $color-offwhite;
+    border-bottom:3px solid rgba($color-black, .9);
+    box-shadow: 3px 4px 12px 0 $color-black;
 
     &__title-box {
         margin: 1rem 10rem;
@@ -15,12 +17,17 @@
     &__logo {
         font-size: 3rem;
         padding: 0 1.5rem;
-        color: $color-white;
+        color: $color-black;
     }
 
     &__name { 
         font-size: 3rem;
-        color: $color-white;
+        color: $color-black;
+        transition: all .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     &__list {
@@ -28,26 +35,51 @@
         display: flex;
     }
 
-    &__list-item a { 
-        font-size: 1.7rem;
+    &__list > * a { 
+        font-size: 2rem;
         display: block;
-        padding: 1rem;
-        color: white;
+        padding: 1.3rem;
+        height: 5rem;
+        color: $color-black;
+        margin: auto 2rem;
+        border-bottom: 0px solid $color-orange;
+
+        &.blue {
+            border-bottom: 0px solid $color-blue;
+        }
+
+        &.green {
+            border-bottom: 0px solid $color-green;
+        }
+
+        &.yellow {
+            border-bottom: 0px solid $color-yellow;
+        }
+
+        
+        transition: all .1s;
+
+        &:hover {
+            border-bottom: 3px solid $color-orange;
+
+            &.blue {
+                border-bottom: 3px solid $color-blue;
+            }
+
+            &.green {
+                border-bottom: 3px solid $color-green;
+            }
+
+            &.yellow {
+                border-bottom: 3px solid $color-yellow;
+            }
+        }
 
         i {
-            color: white;
+            color: $color-black;
             margin-right: 0.5rem;
+
+            
         }
     }
-
-    // &__search {
-    //     all: unset;
-    //     background: white;
-    //     padding: 0.5rem;
-    //     font-size: 1rem;
-    //     border: 1px solid black;
-    //     border-radius: 5rem;
-    //     text-align: center;
-    //     width: 350px;
-    // }
 }

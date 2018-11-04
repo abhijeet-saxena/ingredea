@@ -18,10 +18,18 @@ a {
 ul li {
   list-style: none; }
 
-body {
+.body {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   background-color: #fff; }
+  .body--orange {
+    background-image: linear-gradient(to right bottom, #e65613, #ff450c); }
+  .body--blue {
+    background-image: linear-gradient(to right bottom, #003444, #004e66); }
+  .body--green {
+    background-image: linear-gradient(to right bottom, #395a1a, #5a8f29); }
+  .body--yellow {
+    background-image: linear-gradient(to right bottom, #a47202, #e7a103); }
 
 ::placeholder {
   color: black; }
@@ -34,35 +42,38 @@ body {
   padding: 1.3rem;
   border-radius: 10rem;
   cursor: pointer;
-  box-shadow: 2px 2px 15px 2px rgba(34, 34, 34, 0.7); }
+  box-shadow: 2px 2px 15px 2px rgba(34, 34, 34, 0.7);
+  transition: all .2s; }
+  .btn:hover {
+    transform: scale(1.1); }
+  .btn:focus {
+    outline: none; }
 
 .footer {
   background-color: #2B2B2B;
   color: #fff;
-  width: 100%; }
-  .footer__content-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem; }
-  .footer__title-box {
-    font-size: 2.3rem; }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 2.3rem; }
 
 .form-box {
-  width: 80%;
-  color: #fff;
-  background-image: linear-gradient(to right bottom, #ff5f2e, #c72f00);
+  width: 55%;
+  color: #2B2B2B;
+  background-color: #fff;
   box-shadow: 2px 4px 20px black;
   border-top-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
-  padding: 8rem; }
+  padding: 4rem; }
   .form-box h3 {
     font-size: 5rem;
     font-weight: 300;
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
   .form-box p {
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 1.8rem;
+    font-weight: 800;
     margin-bottom: 2rem;
     margin-left: 1rem; }
 
@@ -72,10 +83,6 @@ body {
     margin-bottom: 1rem; }
   .form > div:last-of-type {
     position: relative; }
-    .form > div:last-of-type::after {
-      content: "";
-      display: table;
-      clear: both; }
   .form__choose {
     position: absolute;
     top: 0;
@@ -94,26 +101,26 @@ body {
   .form textarea, .form__input {
     font-size: 2rem;
     font-family: inherit;
-    color: #fff;
+    color: #222222;
     padding: 1rem 1.5rem;
     border-radius: 2px;
-    background-color: #ff5f2e;
+    background-color: #e4e3e3;
     border: none;
     border-bottom: 3px solid transparent;
     width: 70%;
     display: block;
     transition: all 0.3s; }
     .form textarea::-webkit-input-placeholder, .form__input::-webkit-input-placeholder {
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(34, 34, 34, 0.7); }
     .form textarea::-moz-placeholder, .form__input::-moz-placeholder {
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(34, 34, 34, 0.7); }
     .form textarea:focus:invalid, .form__input:focus:invalid {
       border-bottom: 3px solid #ff450c; }
     .form textarea:invalid, .form__input:invalid {
       box-shadow: none; }
     .form textarea:focus, .form__input:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba(43, 43, 43, 0.1);
+      box-shadow: 0 1rem 2rem rgba(43, 43, 43, 0.3);
       border-bottom: 3px solid #73D216; }
     .form textarea--file, .form__input--file {
       position: absolute;
@@ -127,7 +134,7 @@ body {
   .form textarea {
     margin-bottom: 1rem; }
   .form__label {
-    color: #fff;
+    color: #222222;
     font-size: 1.3rem;
     font-weight: 700;
     margin-left: 2rem;
@@ -152,7 +159,7 @@ body {
   .form__radio-label span {
     height: 3rem;
     width: 3rem;
-    border: 5px solid #fff;
+    border: 5px solid #5a8f29;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -168,20 +175,24 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #e1eef6;
+      background-color: #5a8f29;
       opacity: 0;
       transition: opacity 0.2s; }
   .form__radio-input:checked ~ .form__radio-label span::after {
     opacity: 1; }
   .form__button {
-    margin-top: 4rem; }
+    margin-top: 2rem; }
   .form__copyright {
-    margin-top: -3rem;
-    text-align: end;
+    margin-left: 55%;
+    display: inline-block;
     font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(43, 43, 43, 0.9);
+    font-weight: 800; }
   .form__link:link, .form__link:visited {
-    color: #fff; }
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: #222222;
+    font-size: 2rem; }
   .form__link span {
     text-transform: uppercase;
     text-decoration: underline; }
@@ -194,7 +205,9 @@ body {
   align-items: center;
   justify-content: space-around;
   flex: 0 0 100%;
-  background: #2B2B2B; }
+  background: #f6f6e1;
+  border-bottom: 3px solid rgba(43, 43, 43, 0.9);
+  box-shadow: 3px 4px 12px 0 #2B2B2B; }
   .header__title-box {
     margin: 1rem 10rem;
     display: flex;
@@ -202,20 +215,41 @@ body {
   .header__logo {
     font-size: 3rem;
     padding: 0 1.5rem;
-    color: #fff; }
+    color: #2B2B2B; }
   .header__name {
     font-size: 3rem;
-    color: #fff; }
+    color: #2B2B2B;
+    transition: all .2s; }
+    .header__name:hover {
+      transform: scale(1.1); }
   .header__list {
     margin: 1rem 10rem;
     display: flex; }
-  .header__list-item a {
-    font-size: 1.7rem;
+  .header__list > * a {
+    font-size: 2rem;
     display: block;
-    padding: 1rem;
-    color: white; }
-    .header__list-item a i {
-      color: white;
+    padding: 1.3rem;
+    height: 5rem;
+    color: #2B2B2B;
+    margin: auto 2rem;
+    border-bottom: 0px solid #ff450c;
+    transition: all .1s; }
+    .header__list > * a.blue {
+      border-bottom: 0px solid #004e66; }
+    .header__list > * a.green {
+      border-bottom: 0px solid #5a8f29; }
+    .header__list > * a.yellow {
+      border-bottom: 0px solid #e7a103; }
+    .header__list > * a:hover {
+      border-bottom: 3px solid #ff450c; }
+      .header__list > * a:hover.blue {
+        border-bottom: 3px solid #004e66; }
+      .header__list > * a:hover.green {
+        border-bottom: 3px solid #5a8f29; }
+      .header__list > * a:hover.yellow {
+        border-bottom: 3px solid #e7a103; }
+    .header__list > * a i {
+      color: #2B2B2B;
       margin-right: 0.5rem; }
 
 .container {

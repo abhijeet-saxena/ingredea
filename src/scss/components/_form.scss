@@ -11,7 +11,6 @@
 
     & > div:last-of-type {
         position: relative;
-        @include clearfix;
     }
 
     &__choose {
@@ -38,10 +37,10 @@
     &__input {
         font-size: 2rem;
         font-family: inherit;
-        color: $color-white;
+        color: $color-grey;
         padding: 1rem 1.5rem;
         border-radius: 2px;
-        background-color: $color-orange-light;
+        background-color: $color-onwhite;
         border: none;
         border-bottom: 3px solid transparent; 
         width: 70%;
@@ -49,11 +48,11 @@
         transition: all 0.3s;
 
         &::-webkit-input-placeholder {
-            color: rgba($color-white, 0.7);
+            color: rgba($color-grey, 0.7);
         }
 
         &::-moz-placeholder {
-            color: rgba($color-white, 0.7);
+            color: rgba($color-grey, 0.7);
         }      
         &:focus:invalid {
             border-bottom: 3px solid $color-orange;
@@ -65,7 +64,7 @@
 
         &:focus {
             outline: none;
-            box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
             border-bottom: 3px solid $color-green-light;
         }
 
@@ -86,7 +85,7 @@
     }
 
     &__label {
-        color: $color-white;
+        color: $color-grey;
         font-size: 1.3rem;
         font-weight: 700;
         margin-left: 2rem;
@@ -123,7 +122,7 @@
     &__radio-label span {
         height: 3rem;
         width: 3rem;
-        border: 5px solid $color-white;
+        border: 5px solid $color-green;
         border-radius: 50%;
         display: inline-block;
         position: absolute;
@@ -137,7 +136,7 @@
             width: 1.3rem;
             border-radius: 50%;
             @include absCenter;
-            background-color: $color-offwhite;
+            background-color: $color-green;
             opacity: 0;
             transition: opacity 0.2s;
         }
@@ -148,24 +147,28 @@
     }
 
     &__button {
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     &__copyright {
-        margin-top: -3rem;
-        text-align: end;  
+        margin-left: 55%;
+        display: inline-block;
         font-size: 1.4rem;
-        color: rgba($color-white, 0.7);
+        color: rgba($color-black, .9);
+        font-weight: 800;
     }
 
     &__link:link,
     &__link:visited {
-        color: $color-white;
+        margin-top: 3rem;
+        margin-left: 3rem;
+        color: $color-grey;
+        font-size: 2rem;
     }
 
-    &__link span {//haha..haa...
+    &__link span {
         text-transform: uppercase;
-        text-decoration: underline; //Mutual funds shi h .. lol ...discor pr dhikaata hu 
+        text-decoration: underline;
 
         &:hover {
             text-decoration: none;

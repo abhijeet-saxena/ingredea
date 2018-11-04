@@ -1,7 +1,32 @@
-body {
+.body {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     background-color: $color-white;
+
+    &--orange {
+        background-image: linear-gradient(to right bottom,
+                    $color-orange-dark,
+                    $color-orange);
+    }
+
+    &--blue {
+        background-image: linear-gradient(to right bottom,
+                    $color-blue-dark,
+                    $color-blue);
+    }
+
+    &--green {
+        background-image: linear-gradient(to right bottom,
+                    $color-green-dark,
+                    $color-green);
+    }
+
+    &--yellow {
+        background-image: linear-gradient(to right bottom,
+                    $color-yellow-dark,
+                    $color-yellow);
+    }
+
 }
 ::placeholder {
     color: black;

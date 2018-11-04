@@ -8,4 +8,14 @@
     cursor: pointer;
 
     box-shadow: 2px 2px 15px 2px rgba($color-grey, 0.7);
+
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:focus {
+        outline: none;
+    }
 }

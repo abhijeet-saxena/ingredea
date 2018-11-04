@@ -1,26 +1,24 @@
 .form-box {
-    width: 80%;
-    color: $color-white;  
-    background-image: linear-gradient(
-        to right bottom, 
-        $color-orange-light, 
-        $color-orange-dark);
+    width: 55%;
+    color: $color-black;  
+
+    background-color: $color-white;
+
     box-shadow: 2px 4px 20px black;
         
     border-top-left-radius: 5rem;
     border-bottom-right-radius: 5rem; 
-    padding: 8rem;
+    padding: 4rem;
 
     h3 {
         font-size: 5rem;
         font-weight: 300;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     p {
-        font-size: 2rem;
-        font-weight: 300;
-
+        font-size: 1.8rem;
+        font-weight: 800;
         margin-bottom: 2rem;
         margin-left: 1rem;
     }

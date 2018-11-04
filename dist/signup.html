@@ -13,59 +13,55 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body body--blue">
     <header class="header">
         <div class="header__title-box">
             <a href="./index.html" class="header__name"><i class="fab fa-500px header__logo"></i>Ingredea</a>
         </div>
         <ul class="header__list">
-            <li class="header__list-item"><a href="./login.html"><i class="fas fa-home"></i>Login</a></li>
-            <li class="header__list-item"><a href="./feedback.html"><i class="far fa-bookmark"></i>Feedback</a></li>
-            <li class="header__list-item"><a href="#"><i class="far fa-user"></i>Profile</a></li>
+            <li><a href="./login.html" class="blue"><i class="fas fa-home"></i>Login</a></li>
+            <li><a href="./feedback.html" class="blue"><i class="far fa-bookmark"></i>Feedback</a></li>
+            <li><a href="#" class="blue"><i class="far fa-user"></i>Profile</a></li>
         </ul>
     </header>
 
     <main class="container section-form">
-        <form action="" onsubmit="return register()" class="form form-box">
-            <div>
-                <input type="text" name="signup_fname" id="signup_fname" placeholder="First Name" class="form__input">
-                <label for="signup_fname" class="form__label">First Name</label>
-            </div>
-            <div>
-                <input type="text" name="signup_lname" id="signup_lname" placeholder="Last Name" class="form__input">
-                <label for="signup_lname" class="form__label">Last Name</label>
-            </div>
-            <div>
-                <input type="email" name="email" id="email" class="form__input" placeholder="Email">
-                <label for="email" class="form__label">Email</label>
-            </div>
-            <div>
-                <input type="password" name="signup_pwd" id="signup_pwd" placeholder="Password" class="form__input">
-                <label for="signup_pwd" class="form__label">Password</label>
-            </div>
-            <button type="submit" class="btn">Register</button>
-            <a href="./login.html" class="form__link">Already registered. 
-                <span>Login</span> to use Ingredea !
-            </a>
-        </form>
+        <div class="form-box">
+            <h3>Signup and Get Connected !</h3>
+        
+            <form action="" onsubmit="return register()" class="form">
+                <div>
+                    <input type="text" name="signup_fname" id="signup_fname" placeholder="First Name" class="form__input">
+                    <label for="signup_fname" class="form__label">First Name</label>
+                </div>
+                <div>
+                    <input type="text" name="signup_lname" id="signup_lname" placeholder="Last Name" class="form__input">
+                    <label for="signup_lname" class="form__label">Last Name</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" class="form__input" placeholder="Email">
+                    <label for="email" class="form__label">Email</label>
+                </div>
+                <div>
+                    <input type="password" name="signup_pwd" id="signup_pwd" placeholder="Password" class="form__input">
+                    <label for="signup_pwd" class="form__label">Password</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <a href="./login.html" class="form__link">Already registered. 
+                    <span>Login</span> to use Ingredea !
+                </a>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
-    
-        <div class="footer__content-box">
-            <!--Footer TItle Box-->
-            <div class="footer__title-box">
-                <i class="fab fa-500px" class="footer__logo"></i>
-                <!-- <img src="" alt="" class="footer__logo"> -->
-                <span class="footer__name">Ingredea</span>
-            </div>
-    
-            <!-- copyright -->
-            <div class="footer__copyright">
-                <span class="footer__copyright-content">Made with ♥ by Ingredea &copy;2018 </span>
-            </div>
+        <div>
+            <i class="fab fa-500px" class="footer__logo"></i>
+            <span">Ingredea</span>
         </div>
-    
+        <div>
+            <span>Made with ♥ by Ingredea &copy;2018 </span>
+        </div>
     </footer>
 </body>
 

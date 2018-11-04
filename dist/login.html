@@ -13,52 +13,47 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body class="body body--green">
     <header class="header">
         <div class="header__title-box">
             <a href="./index.html" class="header__name"><i class="fab fa-500px header__logo"></i>Ingredea</a>
         </div>
         <ul class="header__list">
-            <li class="header__list-item"><a href="./login.html"><i class="fas fa-home"></i>Login</a></li>
-            <li class="header__list-item"><a href="./feedback.html"><i class="far fa-bookmark"></i>Feedback</a></li>
-            <li class="header__list-item"><a href="#"><i class="far fa-user"></i>Profile</a></li>
+            <li><a href="./login.html" class="green"><i class="fas fa-home" ></i>Login</a></li>
+            <li><a href="./feedback.html" class="green"><i class="far fa-bookmark" ></i>Feedback</a></li>
+            <li><a href="#" class="green"><i class="far fa-user"></i>Profile</a></li>
         </ul>
     </header>
 
-    <main class="container section-form">  
-        <form action="" onsubmit="return login()" class="form form-box">
-            <div>
-                <input class="form__input" type="email" id="uname" name="uname" placeholder="Email">
-                <label for="uname" class="form__label">Email</label>
-            </div>
-            <div>
-                <input type="password" id="pwd" name="pwd" class="form__input" placeholder="Password">
-                <label for="pwd" class="form__label">Password</label>
-            </div>
-            <button type="submit" class="btn form__button">Log Me In</button>
+    <main class="container section-form">
+        <div class="form-box">
+            <h3>Ingredea Login</h3>
+            <form action="" onsubmit="return login()" class="form">
+                <div>
+                    <input class="form__input" type="email" id="uname" name="uname" placeholder="Email">
+                    <label for="uname" class="form__label">Email</label>
+                </div>
+                <div>
+                    <input type="password" id="pwd" name="pwd" class="form__input" placeholder="Password">
+                    <label for="pwd" class="form__label">Password</label>
+                </div>
+                <button type="submit" class="btn form__button">Log Me In</button>
 
-            <a href="./signup.html" class="form__link">Haven't registered yet ? 
-                <span>Sign up</span> with Ingredea
-            </a>
-        </form>
+                <a href="./signup.html" class="form__link">Haven't registered yet ? 
+                    <span>Sign up</span> with Ingredea
+                </a>
+            </form>
+        </div>
     </main>
 
     <footer class="footer">
-    
-        <div class="footer__content-box">
-            <!--Footer TItle Box-->
-            <div class="footer__title-box">
-                <i class="fab fa-500px" class="footer__logo"></i>
-                <!-- <img src="" alt="" class="footer__logo"> -->
-                <span class="footer__name">Ingredea</span>
-            </div>
-    
-            <!-- copyright -->
-            <div class="footer__copyright">
-                <span class="footer__copyright-content">Made with ♥ by Ingredea &copy;2018 </span>
-            </div>
+        <div>
+            <i class="fab fa-500px" class="footer__logo"></i>
+            <span">Ingredea</span>
         </div>
-    
+        <div>
+            <span>Made with ♥ by Ingredea &copy;2018 </span>
+        </div>
     </footer>
 </body>
 

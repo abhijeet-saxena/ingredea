@@ -34,7 +34,13 @@
         background-image: linear-gradient(to right bottom,
                     $color-orange,
                     $color-yellow,
-                    $color-green);//keeep it...looking gud..no prob
+                    $color-green);
+    }
+
+    &--multi2 {
+        background-image: linear-gradient(to left top,
+                    $color-blue,
+                    $color-green);  
     }
 
 }

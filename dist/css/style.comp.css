@@ -60,6 +60,8 @@ ul li {
     background-image: linear-gradient(to right bottom, #a47202, #e7a103); }
   .body--multi {
     background-image: linear-gradient(to right bottom, #ff5f2e, #e7a103, #5a8f29); }
+  .body--multi2 {
+    background-image: linear-gradient(to left top, #004e66, #5a8f29); }
 
 ::placeholder {
   color: black; }
@@ -471,6 +473,45 @@ ul li {
     .header__list > * a i {
       color: #2B2B2B;
       margin-right: 0.5rem; }
+
+.ingredea {
+  background-color: #fff;
+  color: #2B2B2B;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 5rem; }
+  .ingredea h3 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    color: #ff5f2e;
+    letter-spacing: 1.2;
+    padding: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .ingredea h3 {
+        font-size: 4rem; } }
+  .ingredea #user-dish-card {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center; }
+    .ingredea #user-dish-card img {
+      flex: 0 0 50%;
+      height: auto;
+      box-shadow: 2px 0 20px 0 rgba(43, 43, 43, 0.8); }
+    .ingredea #user-dish-card ol:first-of-type {
+      margin-top: 3rem; }
+    .ingredea #user-dish-card ol {
+      padding: .3rem; }
+      .ingredea #user-dish-card ol i {
+        color: #ff5f2e; }
+  .ingredea #user-suggestions {
+    align-self: center;
+    margin: 3rem auto;
+    padding: 2rem;
+    width: 80%;
+    background-color: #e4e3e3; }
 
 .container {
   display: flex;

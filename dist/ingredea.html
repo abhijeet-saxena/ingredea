@@ -6,62 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Intelligent Scan</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
-    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
 </head>
 
-<body class="body body--yellow">
+<body>
     <header class="header">
         <div class="header__title-box">
-            <a href="./index.html" class="header__name">
-                <img src="./img/logo.png" alt="" class="header__logo">
-                Ingredea
-            </a>
+            <a href="./index.html"><img src="./img/logo.png" alt="">
+                <span>Ingredea</span></a>
         </div>
         <ul class="header__list">
-            <li><a href="./login.html" class="yellow"><i class="fas fa-home"></i>Login</a></li>
-            <li><a href="./feedback.html" class="yellow"><i class="far fa-bookmark"></i>Feedback</a></li>
-            <li><a href="#" class="yellow"><i class="far fa-user"></i>Profile</a></li>
+            <li class="header__list-item"><a href="./home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li class="header__list-item"><a href="./feedback.html"><i class="far fa-bookmark"></i>Feedback</a></li>
+            <li class="header__list-item"><a href="./login.html"><i class="far fa-bookmark"></i>Login</a></li>
         </ul>
     </header>
 
-    <main class="container section-form">
-        <div class="form form-box">
-            <div>
-                <input type="url" name="user-img-url" id="user-img-url" class="form__input" placeholder="Image URL">
-                <button class="btn form__button" onclick="uploadImageToClarafai('url')">Upload URL</button>
-            </div>
-            <br>
-            <div>
-                <input type="file" name="user-img" id="user-img" accept="image/*" class="form__input--file">
-                <button class="form__choose">Choose file</button>
-                <br>
-                <button class="btn form__button" onclick="uploadImageToClarafai('image')">Upload Image</button>
-            </div>
-
+    <main class="container" id="ingredea">
+        <div class="form-group">
+            <input type="url" name="user-img-url" id="user-img-url">
+            <button class="i-btn" onclick="uploadImageToClarafai('url')">Upload URL</button>
+        </div>
+        <div class="form-group">
+            <input type="file" name="user-img" id="user-img" accept="image/*">
+            <button class="i-btn" onclick="uploadImageToClarafai('image')">Upload Image</button>
         </div>
 
         <div id="user-dish-card" style="visibility: hidden">
-            <img src="" alt="Unable to load image" height="350px" width="350px" id="dish-img">
+            <img src="" alt="Unable to load image" height="200px" width="200px" id="dish-img">
             <ol id="mainI"></ol>
             <ol id="addI"></ol>
             <ol id="maybeI"></ol>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="footer__title">
-            <img src="./img/logo.png" alt="" class="footer__logo">
-            <span">Ingredea</span>
+        <div id="user-suggestions">
+
         </div>
-        <div><span>Made with <b>&#10084;</b> by Ingredea &copy;2018 </span></div>
-    </footer>
+    </main>
 </body>
 
+<footer class="footer">
+    <h3><strong>Made with <span style="color: red">♥</span>
+        </strong> by <a style="color: white" href="https://github.com/rocky93/ingredea">Ingredea</a> &copy;2018
+    </h3>
+</footer>
 <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
 <script src="./ingredea.js"></script>
 

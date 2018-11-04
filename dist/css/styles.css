@@ -1,0 +1,120 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: space-evenly;
+  justify-content: space-evenly;
+  flex: 0 0 100%;
+  background: #2b2b2b;
+  color: white;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+.header__title-box {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+}
+.header__list {
+  display: flex;
+  list-style: none;
+}
+.header__list-item a {
+  font-size: 1.2rem;
+  margin: 0 0.5em;
+  display: block;
+  border: solid 1px white;
+  border-radius: 0.5em;
+  padding: 0.5em;
+}
+.header__list-item a:hover {
+  background: white;
+  color: black;
+  font-weight: 900;
+}
+
+.header__list-item a i {
+  margin-right: 0.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  line-height: 1vh;
+  text-align: center;
+  height: 5vh;
+  background-color: #2b2b2b;
+  color: white;
+}
+
+main {
+  width: 80%;
+  margin: 3em auto 10em auto;
+  border: solid 2px black;
+  text-align: center;
+  padding: 1em;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group input {
+  margin-left: 1em;
+}
+
+main a {
+  color: #2b2b2b;
+}
+
+.btn {
+  margin: 1em auto;
+  color: #ffffff;
+  background: #2b2b2b;
+  padding: 1em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+}
+
+.i-btn {
+  margin: 1em auto;
+  color: #ffffff;
+  background: #2b2b2b;
+  padding: 0.5em;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#user-dish-card img{
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+}
+
+#user-dish-card ol{
+  display: inline-block;
+  width: 20%;
+  padding-left: 2em;
+}
+
+#user-suggestions ul{
+  text-align: left;
+}
+
+#user-suggestions h3{
+  text-align: left;
+  text-decoration: underline;
+}
+
+#ingredea{
+  padding: 0;
+}

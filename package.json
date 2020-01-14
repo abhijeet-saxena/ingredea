@@ -1,29 +1,25 @@
 {
-    "name": "ingredea",
-    "version": "1.0.0",
-    "description": "Foodies can now explore the ingredients and recipes for their favourite foods",
-    "main": "index.js",
-    "scripts": {
-        "watch:sass": "node-sass ./src/scss/main.scss ./dist/css/style.css -w",
-        "devserver": "live-server",
-        "start": "npm-run-all --parallel devserver watch:sass",
-        "compile:sass": "node-sass ./src/scss/main.scss ./dist/css/style.comp.css",
-        "prefix:css": "postcss ./dist/css/style.comp.css --use autoprefixer -b browserslist -o ./dist/css/style.prefix.css",
-        "compress:css": "node-sass ./dist/css/style.prefix.css ./dist/css/style.css --output-style compressed",
-        "build:css": "npm-run-all compile:sass prefix:css compress:css"
-    },
-    "keywords": [
-        "food",
-        "recipes"
-    ],
-    "author": "Team Ingredea",
-    "license": "MIT",
-    "devDependencies": {
-        "autoprefixer": "^9.2.1",
-        "concat": "^1.0.3",
-        "live-server": "^1.2.0",
-        "node-sass": "^4.9.3",
-        "npm-run-all": "^4.1.3",
-        "postcss-cli": "^6.0.1"
-    }
+  "name": "ingredea",
+  "version": "1.0.0",
+  "description": "Foodies can now explore the ingredients and recipes for their favourite foods",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass ./src/scss/main.scss ./dist/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass ./src/scss/main.scss ./dist/css/style.comp.css",
+    "prefix:css": "postcss ./dist/css/style.comp.css --use autoprefixer -b browserslist -o ./dist/css/style.prefix.css",
+    "compress:css": "node-sass ./dist/css/style.prefix.css ./dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsRockyy/ingredea.git"
+  },
+  "keywords": [
+    "food",
+    "recipes"
+  ],
+  "author": "Team Ingredea",
+  "license": "MIT"
 }

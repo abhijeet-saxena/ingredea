@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__title-box">
+            <a href="./index.html"><img src="./img/logo.png" alt="">
+                <span>Ingredea</span></a>
+        </div>
+        <ul class="header__list">
+            <li class="header__list-item"><a href="./home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li class="header__list-item"><a href="./feedback.html"><i class="far fa-bookmark"></i>Feedback</a></li>
+            <li class="header__list-item"><a href="./login.html"><i class="far fa-bookmark"></i>Login</a></li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <form action="" onsubmit="return register()">
+            <div class="form-group">
+                <label for="signup_fname">First Name</label>
+                <input type="text" name="signup_fname" id="signup_fname">
+            </div>
+            <div class="form-group">
+                <label for="signup_lname">Last Name</label>
+                <input type="text" name="signup_lname" id="signup_lname">
+            </div>
+            <div class="form-group">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="signup_pwd">Password</label>
+                <input type="password" name="signup_pwd" id="signup_pwd">
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <a href="./login.html">Already registered. Login to use Ingredea !</a>
+        </form>
+    </main>
+</body>
+
+<footer class="footer">
+    <h3><strong>Made with <span style="color: red">♥</span>
+        </strong> by <a style="color: white" href="https://github.com/rocky93/ingredea">Ingredea</a> &copy;2018
+    </h3>
+</footer>
+<script src="https://cdn.jsdelivr.net/faunadb/1.1/faunadb-min.js"></script>
+
+<script src="./main.js"></script>
+
+</html>
